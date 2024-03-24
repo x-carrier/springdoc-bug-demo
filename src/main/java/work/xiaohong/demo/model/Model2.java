@@ -10,7 +10,7 @@ import java.io.Serializable;
  * @since 2024/3/18 12:33
  */
 @Data
-public class Model2 implements Serializable {
+public class Model2 {
 
     private String b;
 

@@ -18,7 +18,7 @@ public class TestController {
     public Result<Model1> test1(){
         Model1 model1 = new Model1();
         model1.setA("aaaa");
-        return Result.OK("success",model1);
+        return new Result<>(1, "success", model1);
     }
 
 
@@ -26,6 +26,6 @@ public class TestController {
     public Result<Model2> test2(){
         Model2 model2 = new Model2();
         model2.setB("bbbb");
-        return Result.OK("success",model2);
+        return new Result<>(2, "success", model2);
     }
 }
